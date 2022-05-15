@@ -1,11 +1,8 @@
 package com.phoebussoftware.technicalTest.web;
 
-import com.phoebussoftware.technicalTest.DTO.AccountDTO;
-import com.phoebussoftware.technicalTest.DTO.CustomerDTO;
-import com.phoebussoftware.technicalTest.model.AccountEntity;
-import com.phoebussoftware.technicalTest.model.CustomerEntity;
-import com.phoebussoftware.technicalTest.service.AccountDetailService;
-import com.phoebussoftware.technicalTest.service.CustomerDetailService;
+import java.util.List;
+
+import javax.validation.Valid;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
-import javax.validation.Valid;
+import com.phoebussoftware.technicalTest.DTO.AccountDTO;
+import com.phoebussoftware.technicalTest.DTO.CustomerDTO;
+import com.phoebussoftware.technicalTest.model.CustomerEntity;
+import com.phoebussoftware.technicalTest.service.CustomerDetailService;
 
 @RestController
 @RequestMapping("/customer")
